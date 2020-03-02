@@ -1,8 +1,13 @@
 import re
-from argparser import get_argparser
 import utils
 from collections import defaultdict
 import pandas as pd
+import spacy
+from tqdm import tqdm
+import pickle
+import os
+from spacy.lang.en.stop_words import STOP_WORDS
+import utils
 
 def build_speaker_info(raw_speaker_info):
     attributes = ['COUNT', 'EUROID', 'NAME', 'LANGUAGE', 'GENDER', 'DATE_OF_BIRTH', 'SESSION_DATE', 'AGE']
@@ -25,6 +30,7 @@ def get_session_sentences(speaker_info_file, sentence_file):
 def get_concatenated_session_contents(data):
     grouped_by_session_and_id = data.groupby(['session_date', 'euroid'])
     session_dict = defaultdict(list)
+    i = 0
     for name, group in grouped_by_session_and_id:
         session_content = ' '.join(group['sentence'].values)
         session_dict['content'].append(session_content)
@@ -33,14 +39,24 @@ def get_concatenated_session_contents(data):
             if col in cols_to_skip:
                 continue
             session_dict[col].append(group.iloc[0][col])
+        session_dict['id'].append(i)
+        i += 1
     session_contents = pd.DataFrame.from_dict(session_dict)
     return session_contents
 
-if __name__ == '__main__':
-    parser = get_argparser()
-    args = parser.parse_args()
-    mep_details = pd.read_csv(args.mep_details, sep='\t')
-    session_sentences = get_session_sentences(args.speaker_info, args.target_lang)
-    full_session_data = get_concatenated_session_contents(session_sentences)
-    import ipdb; ipdb.set_trace()
-    
+def preprocess_docs(docs, lang, cache_path='cache/preprocessed_docs'):
+    if os.path.exists(cache_path):
+        print('Loading preprocessed docs from', cache_path)
+        preprocessed_docs = pickle.load(open(cache_path, 'rb'))
+        return preprocessed_docs
+    nlp = spacy.load(lang)
+    processed_docs = []
+    custom_stopwords = utils.read_file_lines('stopwords.txt')
+    for doc in tqdm(nlp.pipe(docs, n_threads=4, batch_size=500), total=len(docs), desc="Preprocessing docs", mininterval=0.2):
+        ents = doc.ents  # Named entities.
+        doc = [token.lemma_ for token in doc if token.is_alpha and not token.is_stop]
+        doc = [token for token in doc if token not in STOP_WORDS and token not in custom_stopwords]
+        doc.extend([str(entity) for entity in ents if len(entity) > 1])
+        processed_docs.append(doc)
+    print('Saving preprocessed docs to', cache_path)
+    pickle.dump(processed_docs, open(cache_path, 'wb'))
