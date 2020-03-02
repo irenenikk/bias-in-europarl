@@ -1,6 +1,8 @@
 # This file is largely based on this tutorial by Gensim:
 # https://nbviewer.jupyter.org/github/rare-technologies/gensim/blob/develop/docs/notebooks/atmodel_tutorial.ipynb#Explore-author-topic-representation
 
+import os
+import numpy as np
 from argparser import get_argparser
 from data_pipeline import get_session_sentences, \
                             get_concatenated_session_contents, \
@@ -9,7 +11,7 @@ import pandas as pd
 from collections import defaultdict
 from gensim.corpora import Dictionary
 from gensim.models import AuthorTopicModel, atmodel
-import os
+from gensim.models.coherencemodel import CoherenceModel
 
 def build_author2doc(data):
     print('Building author2doc dict')
@@ -49,8 +51,8 @@ def get_author_topic_model(full_session_data, model_path='cache/model.atmodel', 
         print(f'Number of unique tokens: {len(dictionary)}')
         print(f'Number of documents: {len(corpus)}')
     model = AuthorTopicModel(corpus=corpus, num_topics=num_topics, id2word=dictionary.id2token, \
-                    author2doc=author2doc, chunksize=2000, passes=1, eval_every=5, \
-                    iterations=1, random_state=1)
+                    author2doc=author2doc, chunksize=2000, passes=5, eval_every=5, \
+                    iterations=20, random_state=1)
     model.save(model_path)
     print('Saving author topic model to', model_path)
     return model
@@ -61,17 +63,41 @@ def calculate_per_word_bound(model):
                             doc2author=model.doc2author) / corpus_words
     return perwordbound
 
-def find_best_amount_of_topics(full_session_data, options=[200, 300, 500, 1000, 2000, 5000]):
+def calculate_topic_coherence(model):
+    cm = CoherenceModel(model=model, corpus=model.corpus, coherence='u_mass')
+    coherence = cm.get_coherence()
+    return coherence
+
+def find_best_amount_of_topics_on_increasing_metric(full_session_data, metric, options=[5, 10, 20, 50, 100, 200, 300, 500, 1000]):
     best_number_of_topics = 0
-    best_perwordbound = 0
+    best = float('-inf')
+    for n in options:
+        print('Evaluating topic coherence with', n, 'topics')
+        model = get_author_topic_model(full_session_data, num_topics=n)
+        result = metric(model)
+        print('Result', result)
+        if result > best:
+            best = result
+            best_number_of_topics = n
+    return best_number_of_topics
+
+def find_best_amount_of_topics_on_decreasing_metric(full_session_data, metric, options=[200, 300, 500, 1000, 2000, 5000]):
+    best_number_of_topics = 0
+    best = float('inf')
     for n in options:
         print('Evaluating per word bound with', n, 'topics')
         model = get_author_topic_model(full_session_data, num_topics=n)
-        perwordbound = calculate_per_word_bound(model)
-        if perwordbound < best_perwordbound:
-            best_perwordbound = perwordbound
+        result = metric(model)
+        if result < best:
+            best = result
             best_number_of_topics = n
     return best_number_of_topics
+
+def build_topic_feature_vectors(mep_details, model):
+    for euroid in mep_details['MEP id'].values:
+        topics = model.get_author_topics('1', minimum_probability=0)
+        topic_probs = [topic[1] for topic in topics]
+    return topic_probs
 
 if __name__ == '__main__':
     parser = get_argparser()
@@ -79,5 +105,5 @@ if __name__ == '__main__':
     mep_details = pd.read_csv(args.mep_details, sep='\t')
     session_sentences = get_session_sentences(args.speaker_info, args.target_lang)
     full_session_data = get_concatenated_session_contents(session_sentences)
-    best_num_of_topics = find_best_amount_of_topics(full_session_data)
-    print(best_num_of_topics)
+    model = get_author_topic_model(full_session_data, model_path='cache/model.atmodel', num_topics=100, verbose=False)
+    topic_feature_vectors = build_topic_feature_vectors(mep_details, model)
