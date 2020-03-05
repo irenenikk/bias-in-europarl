@@ -8,7 +8,7 @@ from collections import defaultdict
 from gensim.corpora import Dictionary
 from gensim.models import AuthorTopicModel, atmodel, LdaModel
 from gensim.models.coherencemodel import CoherenceModel
-from data_pipeline import preprocess_docs
+from data_pipeline import preprocess_docs, get_age_bin, get_age_bin2
 
 def build_author2doc(data):
     print('Building author2doc dict')
@@ -128,7 +128,6 @@ def build_topic_feature_gender_data(full_session_data, model):
         except:
             # mep not found in model
             pass
-    print('Gender balance in dataset', sum(genders)/len(genders))
     return topic_dists, genders
 
 def build_topic_feature_country_data(full_session_data, model):
@@ -147,23 +146,6 @@ def build_topic_feature_country_data(full_session_data, model):
             # mep not found in model
             pass
     return topic_dists, countries
-
-def get_age_bin2(age):
-    age_limit = 30
-    bins = 5
-    for i in range(bins):
-        if age < age_limit + i*10:
-            return i
-    return bins
-
-def get_age_bin(age):
-    if age < 30:
-        return 0
-    if age < 45:
-        return 1
-    if age < 60:
-        return 2
-    return 3
 
 def build_topic_feature_age_data(full_session_data, model):
     topic_dists = np.zeros((len(full_session_data), model.num_topics))

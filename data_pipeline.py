@@ -59,12 +59,30 @@ def preprocess_docs(docs, lang, model_id, cache_path='cache/preprocessed_docs'):
     for doc in tqdm(nlp.pipe(docs, n_threads=4, batch_size=1000), total=len(docs), desc="Preprocessing docs", mininterval=0.2):
         ents = doc.ents  # Named entities.
         doc = [token.lemma_ for token in doc if token.is_alpha and not token.is_stop]
-        doc = [token for token in doc if token not in STOP_WORDS and token not in custom_stopwords]
+        doc = [token for token in doc if token not in STOP_WORDS]
         doc.extend([str(entity) for entity in ents if len(entity) > 1])
         processed_docs.append(doc)
     print('Saving preprocessed docs to', cache_path)
     pickle.dump(processed_docs, open(cache_path, 'wb'))
     return processed_docs
+
+
+def get_age_bin2(age):
+    age_limit = 30
+    bins = 5
+    for i in range(bins):
+        if age < age_limit + i*10:
+            return i
+    return bins
+
+def get_age_bin(age):
+    if age < 30:
+        return 0
+    if age < 45:
+        return 1
+    if age < 60:
+        return 2
+    return 3
 
 def get_original_and_translated_sentences(english_session_sentences, german_session_sentences):
     english_original_sentences = english_session_sentences[english_session_sentences['language'] == 'EN'].copy()
