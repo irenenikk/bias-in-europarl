@@ -11,10 +11,13 @@ import utils
 
 def build_speaker_info(raw_speaker_info):
     attributes = ['COUNT', 'EUROID', 'NAME', 'LANGUAGE', 'GENDER', 'DATE_OF_BIRTH', 'SESSION_DATE', 'AGE']
+    numerical = ['AGE']
     speaker_dict = defaultdict(list)
     for att in attributes:
         for info in raw_speaker_info:
             value = re.search(rf" {att}=\"(.*?)\"", info).group(1)
+            if att in numerical:
+                value = int(value)
             speaker_dict[att.lower()].append(value)
     speakers = pd.DataFrame.from_dict(speaker_dict)
     return speakers
@@ -44,7 +47,8 @@ def get_concatenated_session_contents(data):
     session_contents = pd.DataFrame.from_dict(session_dict)
     return session_contents
 
-def preprocess_docs(docs, lang, cache_path='cache/preprocessed_docs'):
+def preprocess_docs(docs, lang, model_id, cache_path='cache/preprocessed_docs'):
+    cache_path += '_' + model_id
     if os.path.exists(cache_path):
         print('Loading preprocessed docs from', cache_path)
         preprocessed_docs = pickle.load(open(cache_path, 'rb'))
@@ -52,7 +56,7 @@ def preprocess_docs(docs, lang, cache_path='cache/preprocessed_docs'):
     nlp = spacy.load(lang)
     processed_docs = []
     custom_stopwords = utils.read_file_lines('stopwords.txt')
-    for doc in tqdm(nlp.pipe(docs, n_threads=4, batch_size=500), total=len(docs), desc="Preprocessing docs", mininterval=0.2):
+    for doc in tqdm(nlp.pipe(docs, n_threads=4, batch_size=1000), total=len(docs), desc="Preprocessing docs", mininterval=0.2):
         ents = doc.ents  # Named entities.
         doc = [token.lemma_ for token in doc if token.is_alpha and not token.is_stop]
         doc = [token for token in doc if token not in STOP_WORDS and token not in custom_stopwords]
@@ -60,3 +64,11 @@ def preprocess_docs(docs, lang, cache_path='cache/preprocessed_docs'):
         processed_docs.append(doc)
     print('Saving preprocessed docs to', cache_path)
     pickle.dump(processed_docs, open(cache_path, 'wb'))
+    return processed_docs
+
+def get_original_and_translated_sentences(english_session_sentences, german_session_sentences):
+    english_original_sentences = english_session_sentences[english_session_sentences['language'] == 'EN'].copy()
+    german_original_sentences = german_session_sentences[german_session_sentences['language'] == 'DE'].copy()
+    translated_to_english_sentences = english_session_sentences[english_session_sentences['language'] == 'DE'].copy()
+    translated_to_german_sentences = german_session_sentences[german_session_sentences['language'] == 'EN'].copy()
+    return english_original_sentences, translated_to_english_sentences, german_original_sentences, translated_to_german_sentences
