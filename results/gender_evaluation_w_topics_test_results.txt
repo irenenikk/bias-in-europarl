@@ -1,0 +1,80 @@
+Preprocessing session contents
+Dividing datasets
+Done
+Loading an author topic model from cache/model.atmodel_all_english_200
+Gender distribution
+1.0    0.680339
+0.0    0.319661
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_all_english_200
+Gender distribution
+1.0    0.619469
+0.0    0.380531
+Name: 0, dtype: float64
+all_english_eval (0.7079646017699115, 0.8065650644783118)
+Loading an author topic model from cache/model.atmodel_all_german_50
+Gender distribution
+1.0    0.680339
+0.0    0.319661
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_all_german_50
+Gender distribution
+1.0    0.619469
+0.0    0.380531
+Name: 0, dtype: float64
+all_german_eval (0.6460176991150443, 0.7757847533632287)
+Loading an author topic model from cache/model.atmodel_orig_english_1000
+Gender distribution
+1.0    0.695297
+0.0    0.304703
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_orig_english_1000
+Gender distribution
+1.0    0.615616
+0.0    0.384384
+Name: 0, dtype: float64
+orig_english_eva (0.6696696696696697, 0.7884615384615385)
+Loading an author topic model from cache/model.atmodel_orig_german_100
+Gender distribution
+1.0    0.653285
+0.0    0.346715
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_orig_german_100
+Gender distribution
+1.0    0.622222
+0.0    0.377778
+Name: 0, dtype: float64
+orig_german_eval (0.7466666666666667, 0.8201892744479495)
+Loading an author topic model from cache/model.atmodel_trans_english_100
+Gender distribution
+1.0    0.653285
+0.0    0.346715
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_trans_english_100
+Gender distribution
+1.0    0.622222
+0.0    0.377778
+Name: 0, dtype: float64
+trans_english_eval (0.7822222222222223, 0.8501529051987768)
+Loading an author topic model from cache/model.atmodel_trans_english_200
+Gender distribution
+1.0    0.653285
+0.0    0.346715
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_trans_english_200
+Gender distribution
+1.0    0.622222
+0.0    0.377778
+Name: 0, dtype: float64
+trans_english_eval (0.7155555555555555, 0.8128654970760234)
+Loading an author topic model from cache/model.atmodel_trans_german_200
+Gender distribution
+1.0    0.695297
+0.0    0.304703
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_trans_german_200
+Gender distribution
+1.0    0.615616
+0.0    0.384384
+Name: 0, dtype: float64
+trans_german_eval (0.6366366366366366, 0.7695238095238094)

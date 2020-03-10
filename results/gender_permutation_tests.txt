@@ -1,0 +1,73 @@
+Preprocessing session contents
+Dividing datasets
+Done
+--------Measuring for significance against guessing the most common class-------
+Loading an author topic model from cache/model.atmodel_all_english_200
+Gender distribution
+1.0    0.680339
+0.0    0.319661
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_all_english_200
+Gender distribution
+1.0    0.619469
+0.0    0.380531
+Name: 0, dtype: float64
+all_english_eval against all men 0.0001999600079984003
+Loading an author topic model from cache/model.atmodel_all_german_50
+Gender distribution
+1.0    0.680339
+0.0    0.319661
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_all_german_50
+Gender distribution
+1.0    0.619469
+0.0    0.380531
+Name: 0, dtype: float64
+all_german_eval against all men 0.002999400119976005
+Loading an author topic model from cache/model.atmodel_orig_english_1000
+Gender distribution
+1.0    0.695297
+0.0    0.304703
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_orig_english_1000
+Gender distribution
+1.0    0.615616
+0.0    0.384384
+Name: 0, dtype: float64
+orig_english_eval against all men 0.0001999600079984003
+Loading an author topic model from cache/model.atmodel_orig_german_100
+Gender distribution
+1.0    0.653285
+0.0    0.346715
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_orig_german_100
+Gender distribution
+1.0    0.622222
+0.0    0.377778
+Name: 0, dtype: float64
+orig_german_eval against all men 0.0001999600079984003
+Loading an author topic model from cache/model.atmodel_trans_english_200
+Gender distribution
+1.0    0.653285
+0.0    0.346715
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_trans_english_200
+Gender distribution
+1.0    0.622222
+0.0    0.377778
+Name: 0, dtype: float64
+trans_english_eval against all men 0.0001999600079984003
+Loading an author topic model from cache/model.atmodel_trans_german_200
+Gender distribution
+1.0    0.695297
+0.0    0.304703
+Name: 0, dtype: float64
+Loading an author topic model from cache/model.atmodel_trans_german_200
+Gender distribution
+1.0    0.615616
+0.0    0.384384
+Name: 0, dtype: float64
+trans_german_eval against all men 0.09398120375924815
+-----Measuring for significance between original and translated sentences------
+Original english vs translated german 0.051789642071585686
+Original german vs translated english 0.3877224555088982

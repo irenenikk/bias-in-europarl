@@ -1,0 +1,90 @@
+Preprocessing session contents
+Dividing datasets
+Done
+Getting 17483 BOW vectors
+Loading bow features from
+Loading features from cache/reduced_bow_features_all_english_100
+Fitting 3 folds for each of 8 candidates, totalling 24 fits
+With feature size of 100
+{'C': 2, 'gamma': 'scale', 'kernel': 'rbf'}
+SVC(C=2, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+0.7004519506363159
+---------
+Loading features from cache/reduced_bow_features_all_english_200
+Fitting 3 folds for each of 8 candidates, totalling 24 fits
+With feature size of 200
+{'C': 2, 'gamma': 'auto', 'kernel': 'rbf'}
+SVC(C=2, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+0.703540645776921
+---------
+Preprocessing session contents
+Dividing datasets
+Done
+Getting 17483 BOW vectors
+Loading bow features from
+Loading features from cache/reduced_bow_features_all_english_100
+Fitting 3 folds for each of 8 candidates, totalling 24 fits
+With feature size of 100
+{'C': 2, 'gamma': 'scale', 'kernel': 'rbf'}
+SVC(C=2, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+0.7004519506363159
+---------
+Loading features from cache/reduced_bow_features_all_english_200
+Fitting 3 folds for each of 8 candidates, totalling 24 fits
+With feature size of 200
+{'C': 2, 'gamma': 'auto', 'kernel': 'rbf'}
+SVC(C=2, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+0.703540645776921
+---------
+Reducing feature size to 500
+Preprocessing session contents
+Dividing datasets
+Done
+Getting 17483 BOW vectors
+Loading bow features from
+Loading features from cache/reduced_bow_features_all_english_100
+Fitting 3 folds for each of 8 candidates, totalling 24 fits
+With feature size of 100
+{'C': 2, 'gamma': 'scale', 'kernel': 'rbf'}
+SVC(C=2, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='scale', kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+0.7004519506363159
+---------
+Loading features from cache/reduced_bow_features_all_english_200
+Fitting 3 folds for each of 8 candidates, totalling 24 fits
+With feature size of 200
+{'C': 2, 'gamma': 'auto', 'kernel': 'rbf'}
+SVC(C=2, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+0.703540645776921
+---------
+Reducing feature size to 500
+Saving features to cache/reduced_bow_features_all_english_500
+Fitting 3 folds for each of 8 candidates, totalling 24 fits
+With feature size of 500
+{'C': 2, 'gamma': 'auto', 'kernel': 'rbf'}
+SVC(C=2, break_ties=False, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovr', degree=3, gamma='auto', kernel='rbf',
+    max_iter=-1, probability=False, random_state=None, shrinking=True,
+    tol=0.001, verbose=False)
+0.7112052081096617
+---------
+Reducing feature size to 1000
+Saving features to cache/reduced_bow_features_all_english_1000
+Fitting 3 folds for each of 8 candidates, totalling 24 fits

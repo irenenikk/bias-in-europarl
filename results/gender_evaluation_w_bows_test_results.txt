@@ -1,0 +1,51 @@
+Preprocessing session contents
+Dividing datasets
+Done
+Getting 17483 BOW vectors
+Loading bow features from cache/bow_features_all_english
+Loading features from cache/reduced_bow_features_all_english_500
+Getting 4371 BOW vectors
+Loading bow features from cache/bow_features_all_english_test
+Loading features from cache/reduced_bow_features_all_english_test_500
+Percentage of males in test data: 0.6803935026309769
+all_english result: (0.6575154426904598, 0.7850681981335248)
+Getting 17483 BOW vectors
+Loading bow features from cache/bow_features_all_german
+Loading features from cache/reduced_bow_features_all_german_500
+Getting 4371 BOW vectors
+Loading bow features from cache/bow_features_all_german_test
+Loading features from cache/reduced_bow_features_all_german_test_500
+Percentage of males in test data: 0.6803935026309769
+all_german result: (0.6579730038892702, 0.7865810135617416)
+Getting 9888 BOW vectors
+Loading bow features from cache/bow_features_orig_english
+Loading features from cache/reduced_bow_features_orig_english_500
+Getting 2472 BOW vectors
+BOW vector shape (2472, 2801) saving to cache/bow_features_orig_english_test
+Loading features from cache/reduced_bow_features_orig_english_test_500
+Percentage of males in test data: 0.6622168284789643
+orig_english result: (0.6484627831715211, 0.7758576218725819)
+Getting 7616 BOW vectors
+Loading bow features from cache/bow_features_orig_german
+Loading features from cache/reduced_bow_features_orig_german_500
+Getting 1905 BOW vectors
+BOW vector shape (1905, 2290) saving to cache/bow_features_orig_german_test
+Loading features from cache/reduced_bow_features_orig_german_test_500
+Percentage of males in test data: 0.6698162729658793
+orig_german result: (0.6031496062992125, 0.7358490566037735)
+Getting 7616 BOW vectors
+Loading bow features from cache/bow_features_trans_english
+Loading features from cache/reduced_bow_features_trans_english_500
+Getting 1905 BOW vectors
+BOW vector shape (1905, 2390) saving to cache/bow_features_trans_english_test
+Loading features from cache/reduced_bow_features_trans_english_test_500
+Percentage of males in test data: 0.6698162729658793
+trans_english result: (0.6440944881889764, 0.7644197359277275)
+Getting 9888 BOW vectors
+Loading bow features from cache/bow_features_trans_german
+Loading features from cache/reduced_bow_features_trans_german_500
+Getting 2472 BOW vectors
+BOW vector shape (2472, 3113) saving to cache/bow_features_trans_german_test
+Loading features from cache/reduced_bow_features_trans_german_test_500
+Percentage of males in test data: 0.6622168284789643
+trans_german result: (0.6561488673139159, 0.7848101265822784)

@@ -1,0 +1,386 @@
+Preprocessing session contents
+Dividing datasets
+Done
+Getting 17483 BOW vectors
+Loading bow features from
+---------------
+Reducing bow feature size to 50
+Saving bow features to cache/reduced_bow_features_all_english_50
+mean score 0.6852944114203883 with rbf and feature size is 50 and C = 0.5 and gamma = auto
+best score 0.6852944114203883 with  ('rbf', 0.5, 50, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6861524073769356 with rbf and feature size is 50 and C = 0.5 and gamma = scale
+best score 0.6861524073769356 with  ('rbf', 0.5, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6785448733298711 with rbf and feature size is 50 and C = 0.5 and gamma = 0.1
+best score 0.6861524073769356 with  ('rbf', 0.5, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6783732780647777 with rbf and feature size is 50 and C = 0.5 and gamma = 0.5
+best score 0.6861524073769356 with  ('rbf', 0.5, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6783732780647777 with rbf and feature size is 50 and C = 0.5 and gamma = 1
+best score 0.6861524073769356 with  ('rbf', 0.5, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6783732780647777 with rbf and feature size is 50 and C = 0.5 and gamma = 5
+best score 0.6861524073769356 with  ('rbf', 0.5, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6904994841541265 with rbf and feature size is 50 and C = 1 and gamma = auto
+best score 0.6904994841541265 with  ('rbf', 1, 50, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6927302520469621 with rbf and feature size is 50 and C = 1 and gamma = scale
+best score 0.6927302520469621 with  ('rbf', 1, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6791740494248545 with rbf and feature size is 50 and C = 1 and gamma = 0.1
+best score 0.6927302520469621 with  ('rbf', 1, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6782016926152238 with rbf and feature size is 50 and C = 1 and gamma = 0.5
+best score 0.6927302520469621 with  ('rbf', 1, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6783160829149263 with rbf and feature size is 50 and C = 1 and gamma = 1
+best score 0.6927302520469621 with  ('rbf', 1, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6784304535835495 with rbf and feature size is 50 and C = 1 and gamma = 5
+best score 0.6927302520469621 with  ('rbf', 1, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.687582678744806 with rbf and feature size is 50 and C = 2 and gamma = auto
+best score 0.6927302520469621 with  ('rbf', 1, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6977637884088449 with rbf and feature size is 50 and C = 2 and gamma = scale
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6763142526701311 with rbf and feature size is 50 and C = 2 and gamma = 0.1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6768861158287868 with rbf and feature size is 50 and C = 2 and gamma = 0.5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6776868871888636 with rbf and feature size is 50 and C = 2 and gamma = 1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6780872630533623 with rbf and feature size is 50 and C = 2 and gamma = 5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.676085795983536 with rbf and feature size is 50 and C = 5 and gamma = auto
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6941031712163461 with rbf and feature size is 50 and C = 5 and gamma = scale
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6707659894062058 with rbf and feature size is 50 and C = 5 and gamma = 0.1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6763140759904164 with rbf and feature size is 50 and C = 5 and gamma = 0.5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6771148669815727 with rbf and feature size is 50 and C = 5 and gamma = 1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6778012480419471 with rbf and feature size is 50 and C = 5 and gamma = 5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6676775789162521 with rbf and feature size is 50 and C = 10 and gamma = auto
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6857522670853897 with rbf and feature size is 50 and C = 10 and gamma = scale
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6657898445049684 with rbf and feature size is 50 and C = 10 and gamma = 0.1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6755705095957305 with rbf and feature size is 50 and C = 10 and gamma = 0.5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6764284761056588 with rbf and feature size is 50 and C = 10 and gamma = 1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6777440528920957 with rbf and feature size is 50 and C = 10 and gamma = 5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.637590986617611 with rbf and feature size is 50 and C = 100 and gamma = auto
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.656981339913043 with rbf and feature size is 50 and C = 100 and gamma = scale
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6542357273316883 with rbf and feature size is 50 and C = 100 and gamma = 0.1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6725961654926692 with rbf and feature size is 50 and C = 100 and gamma = 0.5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6747125038236433 with rbf and feature size is 50 and C = 100 and gamma = 1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_50
+mean score 0.6776868970044033 with rbf and feature size is 50 and C = 100 and gamma = 5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Reducing bow feature size to 100
+Saving bow features to cache/reduced_bow_features_all_english_100
+mean score 0.6858663040256628 with rbf and feature size is 100 and C = 0.5 and gamma = auto
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6870103051780859 with rbf and feature size is 100 and C = 0.5 and gamma = scale
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6783732780647777 with rbf and feature size is 100 and C = 0.5 and gamma = 0.1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6783732780647777 with rbf and feature size is 100 and C = 0.5 and gamma = 0.5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6783732780647777 with rbf and feature size is 100 and C = 0.5 and gamma = 1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6783732780647777 with rbf and feature size is 100 and C = 0.5 and gamma = 5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6942173750207944 with rbf and feature size is 100 and C = 1 and gamma = auto
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6961620395623572 with rbf and feature size is 100 and C = 1 and gamma = scale
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6787736735603559 with rbf and feature size is 100 and C = 1 and gamma = 0.1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6784876683644802 with rbf and feature size is 100 and C = 1 and gamma = 0.5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6784304732146289 with rbf and feature size is 100 and C = 1 and gamma = 1
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6782588681339957 with rbf and feature size is 100 and C = 1 and gamma = 5
+best score 0.6977637884088449 with  ('rbf', 2, 50, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6983357791695166 with rbf and feature size is 100 and C = 2 and gamma = auto
+best score 0.6983357791695166 with  ('rbf', 2, 100, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.7004519506363159 with rbf and feature size is 100 and C = 2 and gamma = scale
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6788309276034452 with rbf and feature size is 100 and C = 2 and gamma = 0.1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6779156874193482 with rbf and feature size is 100 and C = 2 and gamma = 0.5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6779728923847391 with rbf and feature size is 100 and C = 2 and gamma = 1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6781444778342931 with rbf and feature size is 100 and C = 2 and gamma = 5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6860954576155769 with rbf and feature size is 100 and C = 5 and gamma = auto
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6955904217921942 with rbf and feature size is 100 and C = 5 and gamma = scale
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6766573057827624 with rbf and feature size is 100 and C = 5 and gamma = 0.1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6770576914628009 with rbf and feature size is 100 and C = 5 and gamma = 0.5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6777441019697942 with rbf and feature size is 100 and C = 5 and gamma = 1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6780872826844417 with rbf and feature size is 100 and C = 5 and gamma = 5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6758570644618294 with rbf and feature size is 100 and C = 10 and gamma = auto
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6847227642036061 with rbf and feature size is 100 and C = 10 and gamma = scale
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6731682445931982 with rbf and feature size is 100 and C = 10 and gamma = 0.1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6765429056675201 with rbf and feature size is 100 and C = 10 and gamma = 0.5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6775153017393096 with rbf and feature size is 100 and C = 10 and gamma = 1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6780300875345905 with rbf and feature size is 100 and C = 10 and gamma = 5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6446840293355857 with rbf and feature size is 100 and C = 100 and gamma = auto
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6492596707703083 with rbf and feature size is 100 and C = 100 and gamma = scale
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6672768595078638 with rbf and feature size is 100 and C = 100 and gamma = 0.1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.67614256906518 with rbf and feature size is 100 and C = 100 and gamma = 0.5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6769433502407968 with rbf and feature size is 100 and C = 100 and gamma = 1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_100
+mean score 0.6778012774885661 with rbf and feature size is 100 and C = 100 and gamma = 5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Reducing bow feature size to 200
+Saving bow features to cache/reduced_bow_features_all_english_200
+mean score 0.6866670753857399 with rbf and feature size is 200 and C = 0.5 and gamma = auto
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6866098900514284 with rbf and feature size is 200 and C = 0.5 and gamma = scale
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6783732780647777 with rbf and feature size is 200 and C = 0.5 and gamma = 0.1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6783732780647777 with rbf and feature size is 200 and C = 0.5 and gamma = 0.5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6783732780647777 with rbf and feature size is 200 and C = 0.5 and gamma = 1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6783732780647777 with rbf and feature size is 200 and C = 0.5 and gamma = 5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6963336740896097 with rbf and feature size is 200 and C = 1 and gamma = auto
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6963908692394609 with rbf and feature size is 200 and C = 1 and gamma = scale
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6783732780647777 with rbf and feature size is 200 and C = 1 and gamma = 0.1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6783732780647777 with rbf and feature size is 200 and C = 1 and gamma = 0.5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6783732780647777 with rbf and feature size is 200 and C = 1 and gamma = 1
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6783732780647777 with rbf and feature size is 200 and C = 1 and gamma = 5
+best score 0.7004519506363159 with  ('rbf', 2, 100, 'scale')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.703540645776921 with rbf and feature size is 200 and C = 2 and gamma = auto
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.7034262063995199 with rbf and feature size is 200 and C = 2 and gamma = scale
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6780300973501302 with rbf and feature size is 200 and C = 2 and gamma = 0.1
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6780872924999816 with rbf and feature size is 200 and C = 2 and gamma = 0.5
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6782016926152238 with rbf and feature size is 200 and C = 2 and gamma = 1
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6783732780647777 with rbf and feature size is 200 and C = 2 and gamma = 5
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6988507710911311 with rbf and feature size is 200 and C = 5 and gamma = auto
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.698907946609903 with rbf and feature size is 200 and C = 5 and gamma = scale
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6762568612094858 with rbf and feature size is 200 and C = 5 and gamma = 0.1
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
+mean score 0.6778013069351853 with rbf and feature size is 200 and C = 5 and gamma = 0.5
+best score 0.703540645776921 with  ('rbf', 2, 200, 'auto')
+---------------
+Loading bow features from cache/reduced_bow_features_all_english_200
